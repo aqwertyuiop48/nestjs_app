@@ -74,10 +74,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sreegithub19/nestjs_app.git"
+    "url": "git+https://github.com/aqwertyuiop48/nestjs_app.git"
   },
   "bugs": {
-    "url": "https://github.com/sreegithub19/nestjs_app/issues"
+    "url": "https://github.com/aqwertyuiop48/nestjs_app/issues"
   },
-  "homepage": "https://github.com/sreegithub19/nestjs_app#readme"
+  "homepage": "https://github.com/aqwertyuiop48/nestjs_app#readme"
 }
