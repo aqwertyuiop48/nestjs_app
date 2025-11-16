@@ -99,7 +99,7 @@ Deployment :
 
   - git add .
   - git commit -m "Changes"
-  - git push origin master
+  - git push origin main
   - npm run build && now (enter through all questions)
   - vercel --prod
 
