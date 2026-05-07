@@ -29,11 +29,23 @@ jobs:
       - name: Install Vercel CLI globally
         run: npm install -g vercel
 
+# https://vercel.com/account/settings/tokens
       - name: Authenticate with Vercel
         run: vercel whoami --token ${{ secrets.VERCEL_TOKEN }}
 
       - name: Build project
         run: npm run build
 
-      - name: Deploy to Vercel (Production)
+      - name: Deploy to nestjs_app
         run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_APP }}
+
+# https://vercel.com/sreegithub19s-projects/nestjs-now/settings#project-id
+# VERCEL_ORG_ID : https://vercel.com/sreegithub19s-projects/~/settings
+      - name: Deploy to nestjs-now
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_NOW }}
