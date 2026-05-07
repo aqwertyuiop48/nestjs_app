@@ -105,8 +105,8 @@ Deployment :
 
   (All in one command) : 
 
-  - git add . && git commit -m "Changes" && git push origin master && npm run build && now && vercel --prod
-  - git add . && git commit -m "Changes" && git push origin master && vercel --prod
+  - git add . && git commit -m "Changes" && git push origin main && npm run build && now && vercel --prod
+  - git add . && git commit -m "Changes" && git push origin main && vercel --prod
 
 (Note):
 Direct pull / clone from remote repo and deployment might result in failed deployment due to absence of "dist" folder. This folder is generated only by running the project locally atleast once.
